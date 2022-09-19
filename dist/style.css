@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+    height: 100vh;
+    font-family: Helvetica, sans-serif;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+    background-color: #00b4d8;
+    height: 60px;
+    width: 100%;
+}
+.header > h2 {
+    color: white;
+}
+.form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.form > button {
+    background-color: #818380;
+    color: white;
+    width: 75px;
+    height: 30px;
+    border-radius: 8px;
+    border: none;
+}
+input[type='text']{
+    height: 27px;
+    width: 200px;
+    border-radius: 8px;
+    border: none;
+    padding: 1px 0 0 5px;
+}
+
+.weather-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 15px;
+    background-color: #90e0ef;
+    padding-top: 30px;
+    width: 100%;
+    flex: 1;
+    color: white;
+}
+.scale-buttons {
+    display: flex;
+    justify-content: center;
+}
+.celsius.active, 
+.fahrenheit.active {
+    background-color: #b9bbb6;
+    box-shadow: 1px 1px 5px 2px rgb(0 0 0 / 18%) inset;
+}
+.scale-buttons > button {
+    width: 35px;
+    height: 35px;
+    background-color: #818380;
+    color: white;
+}
+.celsius {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border: 2px solid #818380;
+    border-right: none;
+}
+.fahrenheit {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border: 2px solid #818380;
+    border-left: none;
+}
+p {
+    margin: 0;
+}
+.city-name {
+    font-size: 24px;
+    font-weight: bold;
+}
+.current {
+    font-size: 32px;
+}
+.temperature-limits {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
